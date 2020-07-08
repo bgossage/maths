@@ -1,0 +1,58 @@
+
+= Some Maths
+
+== Axioms
+
+. If *L* and *R* are two subsets of the x-axis such that (*1*) every point of the x-axis belongs to either *L* or to *R* and (*2*) if _l_ is a point of *L* and _r_ is a point of *R*, then _l_ is to the left of _r_, then either *L* has a right most point or *R* has a left most point.
+
+
+
+
+
+== Definitions
+
+. If *M* is a point set, then the statement that the point *P* is a _limit point_ of *M* means that if *s* is a segment containing *P* then *s* contains a point of *M* other than *P*.
+
+. The statement that the point set *M* is *_closed_* means that there is no limit point of *M* that does not belong to *M*.
+
+. If *M* is a point set, then the statement that the point *P* is a _lomit point_ of *M* means that if *I* is an interval containing *P* then *I* contains a point of *M* distinct from *P*.
+
+. The statement that the point set *M* is *_clused_* means that there is no lomit point of *M* that does not belong to *M*.
+
+. The point set _f_ such that no two points of _f_ have the same abscissa is called a __simple graph__.
+
+. The statement that the simple graph G is continuous at the point P means that: (1) P belongs to G and (2) if Alpha and Beta are two horizontal lines with P between them, then there exist two vertical lines h and k with P between them such that every point of G which is between h and k is between Alpha and Beta.
+
+. The statement the simple graph _f_ is continuous means that if P is a point of _f_ then _f_ is continuous at P.
+
+//. A function f mapping a topological space X into a topological space Y is //defined to be continuous if, for each open set V of Y, the subset of X //consisting of all points p for which f(p) belongs to V is an open set of X.
+
+== Proofs
+
+=== The function b(x) is continous
+
+.The definition of b(x)
+[latexmath]
+--
+b(x) = \begin{cases}x & 0<=x<1\\x+1 & 1< x <= 2\end{cases}
+--
+
+Suppose P=(x,y) is a point of _b(x)_ and that Alpha and Beta are horizontal lines with P between them. 
+
+Let A denote one of Alpha and Beta such that A is above P.  
+Let B denote one of Alpha and Beta such that B is below P
+
+Suppose 0 < = x < 1:
+
+For every horizontal line above P, there exists a horizontal line y=a between A and P that intersects b(x) at (k,a) and k is to the right of x. Let |k denote the vertical line x=k.  Let [underline]#a# denote the horizontal line y=a. 
+
+For every horizontal line below P but not below y=0, there exists a horizontal line y=b between A and P that intersects b(x) at (h,b) and h is to the left of x. Let |h denote the vertical line x=h.  Let [underline]#b# define the horizontal line y=b.
+
+All points of b(x) between |h and |k are between [underline]#a# and [underline]#b# and hence are between Alpha and Beta.
+
+For any horizontal line below y=0, any vertical line to the left of x=0 suffices to bound all the points of b(x) on the left.
+
+Therefore, there exist vertical lines |h and |k with P between them such that every point of b(x) between |h and |k is between Alpha and Beta.  Hence _b(x)_ is continuous at P.
+
+The proof for 1 < x < = 2 follows similarly.
+
