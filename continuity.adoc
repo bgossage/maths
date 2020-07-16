@@ -11,6 +11,10 @@
 
 == Definitions
 
+. If *a* and *b* are are two points then the segment (a,b) is the point set to which P belongs if and only if P is between *a* and *b*.
+
+. If *a* and *b* are are two points then the interval [a,b] is the point set to which P belongs if and only if P is *a* or P is *b* or P between *a* and *b*.
+
 . If *M* is a point set, then the statement that the point *P* is a _limit point_ of *M* means that if *s* is a segment containing *P* then *s* contains a point of *M* other than *P*.
 
 . The statement that the point set *M* is *_closed_* means that there is no limit point of *M* that does not belong to *M*.
