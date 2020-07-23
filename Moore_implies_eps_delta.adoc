@@ -1,0 +1,47 @@
+
+== Definitions
+
+. If *a* and *b* are are two points then the segment (a,b) is the point set to which P belongs if and only if P is between *a* and *b*.
+
+. The point set *f* such that no two points of *f* have the same abscissa is called a __simple graph__.
+
+. [Moore] The statement that the simple graph G is continuous at the 
+point *P* means that: (1) *P* belongs to G and (2) if Alpha and Beta are 
+two horizontal lines with P between them, then there exist two vertical
+lines h and k with *P* between them such that every point of G which 
+is between h and k is between Alpha and Beta. (a.k.a "Property (S)" [Wall])
+
+. [Eps-Delta] The statement that the function f is continuouis at a means
+that: a is in the domain of f and if eps > 0 then there exist a delta > 0 
+such that if x is a number in the domain of f such that abs(x-a) < delta 
+then abs(f(x)-f(a)) < eps.
+
+== Proof
+
+Suppose the simple graph f is continuous at P = (a,f(a)) under [Moore].
+
+Suppose eps > 0.
+
+
+
+Let Sy = (Ya,Yb) define a segment on the Y axis such that f(a) is in 
+Sy and abs(Yb-Ya) < eps.
+
+Let B denote the horizontal line with ordinate Yb.
+
+Let A denote the horizontal line with ordinate Ya.
+
+P is between A and B therefore there exist vertical lines |h and |k such 
+that every point of f between |h and |k is between A and B.
+
+Let delta = the lesser of abs(a-h) or abs(a-k).
+
+Suppose x is a number in the domain of f such that abs(x-a) < delta.
+
+Let Sx = (a-delta,a+delta).  If x in in Sx then abs(x-a) < delta.
+
+Since Sx is a subset of (h,k), if x is in Sx, f(x) and f(a) are in Sy
+therefore the abs(f(x)-f(a)) < eps.
+
+*f* is continuous at *P* under [Eps-Delta].
+
